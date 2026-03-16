@@ -1,146 +1,114 @@
-# Customer-Churn-PredictionCustomer Churn Prediction
-Project Highlights
+# Customer Churn Prediction
 
-Built a machine learning model to predict telecom customer churn.
+## Project Highlights
+- Built a machine learning model to predict telecom customer churn.
+- Performed Exploratory Data Analysis (EDA) to understand customer behavior.
+- Identified key factors influencing churn such as tenure, contract type, and internet services.
+- Implemented KNN and Random Forest models for churn prediction.
+- Evaluated models using accuracy score and confusion matrix.
 
-Performed Exploratory Data Analysis (EDA) to understand customer behavior.
+---
 
-Identified key factors influencing churn such as tenure, contract type, and internet services.
+# Problem Statement
 
-Implemented KNN and Random Forest models for churn prediction.
-
-Evaluated models using accuracy, confusion matrix, and classification analysis.
-
-This project helps companies identify customers likely to churn and take proactive retention actions.
-
-Problem Statement
-
-Customer churn is one of the major challenges for telecom companies. Acquiring new customers is significantly more expensive than retaining existing ones. Therefore, predicting which customers are likely to churn allows companies to take preventive measures such as personalized offers, improved customer service, or loyalty programs.
+Customer churn is one of the major challenges faced by telecom companies. Acquiring new customers is significantly more expensive than retaining existing ones. Therefore, predicting which customers are likely to churn allows companies to take preventive measures such as improving customer service, offering personalized discounts, or providing loyalty programs.
 
 The goal of this project is to analyze telecom customer data and build machine learning models that can accurately predict customer churn.
 
-Dataset
+---
 
-The project uses the Telco Customer Churn dataset, which contains information about customers of a telecom company.
+# Dataset
 
-Dataset Features
+The dataset used in this project is the **Telco Customer Churn dataset**.
 
-The dataset includes information such as:
+### Dataset Features
 
-Customer demographics (gender, senior citizen, partner, dependents)
+The dataset contains information about:
 
-Account information (tenure, contract type, payment method)
+- Customer demographics (Gender, Senior Citizen, Partner, Dependents)
+- Account information (Tenure, Contract Type, Payment Method)
+- Services subscribed (Internet Service, Phone Service, Streaming Services)
+- Billing information (Monthly Charges, Total Charges)
+- Target variable: **Churn**
 
-Services subscribed (internet service, phone service, streaming services)
+Each row represents a customer and whether they have churned or remained with the company.
 
-Billing information (monthly charges, total charges)
+---
 
-Target variable: Churn
+# Project Workflow
 
-Each row represents a customer and whether they left the service or remained.
+## 1 Data Exploration
+- Loaded the dataset
+- Checked data types and structure
+- Identified missing values
+- Generated summary statistics
 
-Project Workflow
-1 Data Exploration
+## 2 Data Preprocessing
+- Handled missing values
+- Converted categorical variables into numerical features
+- Performed feature engineering
+- Split dataset into training and testing sets
 
-Checked dataset structure
+## 3 Exploratory Data Analysis
+Visualizations used in this project include:
 
-Identified missing values
+- Churn distribution
+- Gender vs Churn
+- Internet service vs Churn
+- Payment method distribution
+- Tenure vs Churn
+- Correlation heatmaps
 
-Analyzed data types
+These visualizations help understand the patterns and relationships in the dataset.
 
-Generated descriptive statistics
+---
 
-2 Data Preprocessing
-
-Handled missing values
-
-Converted categorical variables into numerical features
-
-Feature engineering
-
-Train-test split
-
-3 Exploratory Data Analysis
-
-Several visualizations were used to understand customer churn patterns:
-
-Churn distribution
-
-Gender vs Churn
-
-Internet service vs Churn
-
-Payment method distribution
-
-Tenure vs Churn
-
-Correlation heatmaps
-
-These visualizations helped identify important patterns influencing churn behavior.
-
-4 Machine Learning Models
+## 4 Machine Learning Models
 
 The following models were implemented:
 
-K-Nearest Neighbors (KNN)
+### K-Nearest Neighbors (KNN)
+A distance-based classification algorithm that predicts the class of a data point based on its nearest neighbors.
 
-Distance-based classification algorithm
+### Random Forest Classifier
+An ensemble learning method that builds multiple decision trees and combines their predictions to improve accuracy and reduce overfitting.
 
-Used to classify customers based on similarity
+---
 
-Random Forest Classifier
-
-Ensemble learning method
-
-Combines multiple decision trees to improve prediction accuracy
-
-Model Evaluation
+# Model Evaluation
 
 The models were evaluated using:
 
-Accuracy Score
+- Accuracy Score
+- Confusion Matrix
 
-Confusion Matrix
+The confusion matrix helps analyze how well the model correctly predicts churn and non-churn customers.
 
-Classification metrics
+---
 
-Example Confusion Matrix Interpretation:
+# Key Insights
 
-Correctly predicted non-churn customers
+Important findings from the analysis include:
 
-Correctly predicted churn customers
+- Customers with **month-to-month contracts** show higher churn rates.
+- Customers with **short tenure** are more likely to churn.
+- Customers with **higher monthly charges** tend to churn more frequently.
+- Certain internet service types influence churn probability.
 
-False positives and false negatives
+These insights can help companies improve customer retention strategies.
 
-This helps understand how well the model distinguishes between churn and non-churn customers.
+---
 
-Key Insights
+# Technologies Used
 
-Some important findings from the analysis include:
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
 
-Customers with month-to-month contracts have higher churn rates
+---
 
-Customers with short tenure are more likely to churn
-
-Certain internet service types influence churn probability
-
-Customers with higher monthly charges tend to churn more frequently
-
-These insights can help companies improve retention strategies and customer satisfaction.
-
-Technologies Used
-
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-Jupyter Notebook
-
-Project Structure
-Customer-Churn-Prediction
-│
-├── Customer_churn.ipynb
-├── dataset.csv
-└── README.md
+# Project Structure
