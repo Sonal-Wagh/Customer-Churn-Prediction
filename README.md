@@ -110,5 +110,3 @@ These insights can help companies improve customer retention strategies.
 - Jupyter Notebook
 
 ---
-
-# Project Structure
